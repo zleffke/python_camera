@@ -16,9 +16,7 @@ import datetime
 import string
 
 RTSP_URL = 'rtsp://admin:sky_track_2022@192.168.1.10/live'
-
 os.environ['OPENCV_FFMPEG_CAPTURE_OPTIONS'] = 'rtsp_transport;udp'
-
 cap = cv2.VideoCapture(RTSP_URL, cv2.CAP_FFMPEG)
 
 if not cap.isOpened():
